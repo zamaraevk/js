@@ -1,0 +1,143 @@
+body {
+    margin:0;
+    padding:0;
+    min-width:1390px;
+    background: #bcbcb2;
+    font-family:"Lato",sans-serif;
+}
+/*Drawing*/
+#black-board{
+ width:100%;
+	height:120px;
+	background:black;
+	text-align:center;
+}
+.train {
+ display:inline-block;
+}
+canvas {
+	text-align:center;
+}
+#mta {
+	float:left;
+	margin-left:150px;
+	margin-top:80px;
+	
+}
+#exit-box {
+	background:red;
+	height:120px;
+}
+#arrow {
+	width:100px;
+	margin-bottom:10px;
+	margin-left:10px;
+}
+#top {
+	width:100%;
+	height:15px;
+	background:#666;
+}
+
+#bottom {
+	width:100%;
+	height:25px;
+	background:black;
+	position:fixed;
+	bottom:100px;
+
+}
+#platform {
+	width:100%;
+	height:100px;
+	background:#e0b50b;
+	position:fixed;
+	bottom:0px;
+
+}
+#door {
+	float:right;
+ margin-top:50px;
+	height:225px;
+	width:150px;
+	background:#666;
+	border-top-left-radius:25px;
+	border-bottom-left-radius:25px;
+	}
+#door-inner {
+    background: url(window.jpg) center no-repeat;
+	float:right;
+	margin:10px;
+	margin-right:0;
+	height:205px;
+	width:135px;
+	border-right:5px solid #666;
+	border-top-left-radius:25px;
+	border-bottom-left-radius:25px;
+	}	
+/*Drawing End*/
+*:focus {
+    border:none;
+    outline: none;
+}
+.message {
+    margin: 0px;
+    text-align: center;
+    
+}
+#userinput{
+    margin: 25px;
+    padding: 3px;
+    font-size: 32px;
+    text-transform: lowercase;
+    border: 3px solid #666;
+    
+}
+#button {
+    margin: 0;
+    margin-left:20px;
+    font-size: 32px;
+    background:#bcbcb2; 
+    color: #666;
+    border: 3px solid #666;
+    cursor:pointer;
+}
+#button:hover {
+    background:#bcbcb2;
+    color: #000;
+    border: 3px solid #000;
+    transition: all 0.75s;
+    --webkit-transition: all 0.75s;
+    --moz-transition: all 0.75s;
+} 
+.square {
+    width:5px;
+    height: 5px;
+    background:#2d2d2d;
+    display: inline-block;
+    border-radius:15%;
+    margin: 0;
+    padding: 0;
+    transition:background 0.6s;
+    --webkit-transition:background 0.6s;
+    --moz-transition:background 0.6s;
+}
+.square:hover {
+    background:#000;	
+}
+#container {
+			 float:left;
+				margin-top:50px;
+    margin-left:100px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    background: #000;
+    width: 800px;
+}
+.letter-container{
+    line-height: 0.25;
+    width: 40px;
+    margin: 2.5px;
+    display: inline-block;
+}
